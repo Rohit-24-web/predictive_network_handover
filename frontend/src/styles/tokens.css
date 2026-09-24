@@ -1,0 +1,63 @@
+/*
+  Design tokens for the operations console.
+
+  Palette is built from instrument panels rather than generic dashboard blues: a
+  deep slate-navy field, a cool signal-teal for healthy state, amber and coral for
+  escalation, and a single indigo reserved for "this is the path in use". Semantic
+  colour is never written inline in a component — everything references a token.
+*/
+:root {
+  /* field */
+  --bg-deep: #060910;
+  --bg-field: #0a0f1a;
+  --panel: rgba(18, 26, 42, 0.72);
+  --panel-solid: #121a2a;
+  --panel-raised: rgba(26, 36, 56, 0.85);
+  --hairline: rgba(120, 150, 200, 0.16);
+  --hairline-strong: rgba(120, 150, 200, 0.32);
+
+  /* type */
+  --ink: #e7edf7;
+  --ink-muted: #93a3bd;
+  --ink-dim: #64748b;
+
+  /* semantic state */
+  --ok: #35d6a4;
+  --ok-dim: rgba(53, 214, 164, 0.14);
+  --warn: #f0b429;
+  --warn-dim: rgba(240, 180, 41, 0.14);
+  --crit: #ff6b6b;
+  --crit-dim: rgba(255, 107, 107, 0.14);
+  --active: #7c8cff;
+  --active-dim: rgba(124, 140, 255, 0.16);
+  --real: #35d6a4;
+  --sim: #8b9bb4;
+
+  /* type scale */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --t-xs: 0.6875rem;
+  --t-sm: 0.8125rem;
+  --t-base: 0.9375rem;
+  --t-lg: 1.125rem;
+  --t-xl: 1.5rem;
+  --t-2xl: 2.25rem;
+  --t-3xl: 3rem;
+
+  /* space + shape */
+  --gap: 16px;
+  --gap-lg: 24px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+}
+
+/* Severity helpers so components never hardcode a colour. */
+.sev-low { color: var(--ok); }
+.sev-medium { color: var(--warn); }
+.sev-high { color: var(--crit); }
+.sev-none { color: var(--ink-dim); }
+.bg-low { background: var(--ok); }
+.bg-medium { background: var(--warn); }
+.bg-high { background: var(--crit); }
+.bg-none { background: var(--ink-dim); }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/header" android:textSize="20sp" android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/disclaimer" android:textSize="12sp"
+            android:paddingTop="4dp" android:paddingBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Backend base URL" android:textStyle="bold" />
+        <EditText android:id="@+id/urlInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textUri" android:hint="http://10.0.2.2:8000"
+            android:autofillHints="" />
+
+        <Button android:id="@+id/toggleButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/start" android:layout_marginTop="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:stretchColumns="1">
+
+            <TableRow><TextView android:text="Status" android:textStyle="bold" />
+                <TextView android:id="@+id/statusValue" android:text="idle" /></TableRow>
+            <TableRow><TextView android:text="Permission" android:textStyle="bold" />
+                <TextView android:id="@+id/permissionValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="Network type" android:textStyle="bold" />
+                <TextView android:id="@+id/networkValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="RSRP" android:textStyle="bold" />
+                <TextView android:id="@+id/rsrpValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="RSRQ" android:textStyle="bold" />
+                <TextView android:id="@+id/rsrqValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="RSSI" android:textStyle="bold" />
+                <TextView android:id="@+id/rssiValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="RSSI source" android:textStyle="bold" />
+                <TextView android:id="@+id/rssiSourceValue" android:text="unavailable" /></TableRow>
+            <TableRow><TextView android:text="SINR" android:textStyle="bold" />
+                <TextView android:id="@+id/sinrValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="SINR source" android:textStyle="bold" />
+                <TextView android:id="@+id/sinrSourceValue" android:text="unavailable" /></TableRow>
+            <TableRow><TextView android:text="Last sample" android:textStyle="bold" />
+                <TextView android:id="@+id/timestampValue" android:text="N/A" /></TableRow>
+            <TableRow><TextView android:text="Samples sent" android:textStyle="bold" />
+                <TextView android:id="@+id/sentValue" android:text="0" /></TableRow>
+            <TableRow><TextView android:text="Session id" android:textStyle="bold" />
+                <TextView android:id="@+id/sessionValue" android:text="N/A" /></TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Handover Telemetry</string>
+    <string name="start">Start telemetry</string>
+    <string name="stop">Stop telemetry</string>
+    <string name="header">Real cellular telemetry</string>
+    <string name="disclaimer">These are REAL terrestrial cellular measurements from this
+        phone\'s modem. The backend\'s LEO/MEO/GEO candidate paths are simulated. This app
+        observes the cellular link only — it cannot command a carrier handover.</string>
+</resources>

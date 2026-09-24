@@ -1,0 +1,10 @@
+{
+  "ho_interrupt_steps": 1,
+  "min_dwell_steps": 8,
+  "cooldown_steps": 5,
+  "improvement_margin": 0.08,
+  "sustained_poor_steps": 3,
+  "switching_penalty": 0.05,
+  "risk_weight": 0.35,
+  "degradation_tau": 0.55
+}
